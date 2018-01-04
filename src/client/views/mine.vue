@@ -1,6 +1,7 @@
 <template>
     <div id="mine">
         <h1>{{greeter}}</h1>
+        <button @click="clickBtn">点击</button>
     </div>
 </template>
 
@@ -13,6 +14,20 @@ export default {
     },
     mounted: function (){
         // alert('mine')
+    },
+    methods: {
+        clickBtn () {
+            this.$http({
+                methods: 'get',
+                url: 'http://localhost:3000/users'
+            })
+            .then( res => {
+                console.log(res)
+            })
+            .catch( err => {
+                console.log(err)
+            })
+        }
     }
 }
 </script>

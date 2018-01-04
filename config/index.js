@@ -13,15 +13,23 @@ module.exports = {
     proxyTable: {
       env: require('./dev.env'),
       port: 8080,
-      autoOpenBrowser: true,
-      assetsSubDirectory: 'static',
+      // autoOpenBrowser: true,
+      // assetsSubDirectory: 'static',
       assetsPublicPath: '/',
-      proxyTable: {
+      target: 'http://localhost:3000',
+      changeOrigin: true,
+      pathRewrite: {
         '/api': {
           target: 'http://localhost:3000',
           changeOrigin: true
         }
       }
+      // '/api': {
+      //   target: 'http://localhost:3000',
+      //   changeOrigin: true,
+      //   pathRewrite: {
+      //     '^/api': ''
+      //   }
     },
 
     // Various Dev Server settings

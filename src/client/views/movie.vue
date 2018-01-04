@@ -1,6 +1,7 @@
 <template>
 	<div id="movie">
 		<divider>豆瓣电影top50</divider>
+		<h1>hehe</h1>
 		<ul class="movie-list">
             <li v-for="item in lists" :key="item.id" @click="getWarn()">
                 <panel :header="item.type" :footer="item.footer" :list="item.list"></panel>
