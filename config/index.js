@@ -11,25 +11,25 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      env: require('./dev.env'),
-      port: 8080,
-      // autoOpenBrowser: true,
-      // assetsSubDirectory: 'static',
-      assetsPublicPath: '/',
-      target: 'http://111.231.78.140:3000',
-      changeOrigin: true,
-      pathRewrite: {
-        '/api': {
-          target: 'http://111.231.78.140:3000',
-          changeOrigin: true
-        }
-      }
-      // '/api': {
-      //   target: 'http://111.231.78.140:8088',
-      //   changeOrigin: true,
-      //   pathRewrite: {
-      //     '^/api': ''
+      // env: require('./dev.env'),
+      // port: 8080,
+      // // autoOpenBrowser: true,
+      // // assetsSubDirectory: 'static',
+      // assetsPublicPath: '/',
+      // target: 'http://111.231.78.140:3000',
+      // changeOrigin: true,
+      // pathRewrite: {
+      //   '/api': {
+      //     target: 'http://111.231.78.140:3000',
+      //     changeOrigin: true
       //   }
+      // }
+      '/api': {
+        target: 'http://111.231.78.140:3000',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '/'
+        }
     },
 
     // Various Dev Server settings
