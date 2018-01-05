@@ -1,0 +1,57 @@
+
+> app@1.0.0 start /usr/share/nginx/server2
+> node ./src/server/bin/www
+
+[0mGET / [32m200 [0m2781.755 ms - 162[0m
+[0mGET / [32m200 [0m23.902 ms - 162[0m
+[0mGET /css/style.css [32m200 [0m20.820 ms - 129[0m
+[0mGET /favicon.ico [33m404 [0m24.543 ms - 1058[0m
+
+> app@1.0.0 start /usr/share/nginx/server2
+> node ./src/server/bin/www
+
+Port 3000 is already in use
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! app@1.0.0 start: `node ./src/server/bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the app@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2018-01-04T10_42_12_840Z-debug.log
+[0mGET / [36m304 [0m23.381 ms - -[0m
+[0mGET /css/style.css [32m200 [0m2.037 ms - 129[0m
+[0mGET / [32m200 [0m19.694 ms - 162[0m
+[0mGET /css/style.css [32m200 [0m1.029 ms - 129[0m
+
+> app@1.0.0 start /usr/share/nginx/server2
+> node ./src/server/bin/www
+
+Port 3000 is already in use
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! app@1.0.0 start: `node ./src/server/bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the app@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2018-01-04T10_44_25_325Z-debug.log
+
+> app@1.0.0 start /usr/share/nginx/server2
+> node ./src/server/bin/www
+
+Port 3000 is already in use
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! app@1.0.0 start: `node ./src/server/bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the app@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2018-01-04T10_44_31_883Z-debug.log
