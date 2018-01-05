@@ -1,15 +1,36 @@
-// 数据库配置
+// 连接数据库
 const mysql = require('mysql');
+const connection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : 'yushengyuan',
+    database : 'test'
+});
 
-module.exports = (sql, callback) => {
-	const db = mysql.createConnection({
-        host : 'localhost',
-        user : 'root',
-        password : 'yushangyuan',
-        database : 'test'
-    });
+connection.connect();
 
-    db.connect();
-    db.query(sql, callback);
-	db.end();
-};
+// 查询
+connection.query('SELECT * FROM `user_info` WHERE `ID`=0', function(err, rows, fields) {
+    if (err) throw err;
+    console.log('The solution is: ', rows);
+});
+
+// 关闭连接
+connection.end();
+
+
+// 数据库配置
+// const mysql = require('mysql');
+
+// module.exports = (sql, callback) => {
+// 	const db = mysql.createConnection({
+//         host : 'localhost',
+//         user : 'root',
+//         password : 'yushangyuan',
+//         database : 'test'
+//     });
+
+//     db.connect();
+//     db.query(sql, callback);
+// 	db.end();
+// };
