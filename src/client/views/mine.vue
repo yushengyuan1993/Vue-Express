@@ -20,7 +20,7 @@ export default {
             this.$http({
                 // methods: 'get',
                 // url: '/users'
-                methods: 'post',
+                methods: 'get',
                 url: '/getuser'
             })
             .then( res => {
