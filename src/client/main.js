@@ -2,9 +2,9 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import { AjaxPlugin } from 'vux'
-Vue.use(AjaxPlugin)
-Vue.$http.defaults.baseURL = 'api/'
+
+import axios from 'axios'
+axios.defaults.baseURL = 'api/'
 
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'

@@ -29,10 +29,7 @@
 		},
 		mounted () {
 			var _this = this;
-			this.$http({
-				methods: 'post',
-				url: '/static/data/top50.json'
-			})
+			axios.get('/static/data/top50.json')
 			.then( (res) => {
 				res.data.subjects.forEach( (item, i) => {
 					let obj = {};
