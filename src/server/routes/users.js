@@ -4,7 +4,7 @@ const db = require('../db');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('hello yushengyuan');
+  	res.send('hello yushengyuan');
 });
 
 // router.post('/countryList', (req, res) => {
