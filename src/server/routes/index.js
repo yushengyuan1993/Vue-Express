@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/movie', function(req, res, next) {
+  res.sendFile('../static/data/top50.json');
+});
+
 module.exports = router;

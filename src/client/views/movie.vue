@@ -31,7 +31,7 @@
 			var _this = this;
 			this.$http({
 				methods: 'post',
-				url: '/static/data/top50.json'
+				url: '/movie'
 			})
 			.then( (res) => {
 				res.data.subjects.forEach( (item, i) => {
