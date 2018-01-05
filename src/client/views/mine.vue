@@ -19,7 +19,7 @@ export default {
         clickBtn () {
             this.$http({
                 methods: 'get',
-                url: 'http://111.231.78.140:8088/users'
+                url: '/users'
             })
             .then( res => {
                 console.log(res)

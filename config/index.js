@@ -16,11 +16,11 @@ module.exports = {
       // autoOpenBrowser: true,
       // assetsSubDirectory: 'static',
       assetsPublicPath: '/',
-      target: 'http://111.231.78.140:8088',
+      target: 'http://111.231.78.140:3000',
       changeOrigin: true,
       pathRewrite: {
         '/api': {
-          target: 'http://111.231.78.140:8088',
+          target: 'http://111.231.78.140:3000',
           changeOrigin: true
         }
       }

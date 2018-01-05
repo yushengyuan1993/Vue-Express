@@ -5,6 +5,7 @@ import App from './App'
 import 'babel-polyfill'
 import { AjaxPlugin } from 'vux'
 Vue.use(AjaxPlugin)
+Vue.prototype.$http.defaults.baseURL ="http://111.231.78.140:3000"
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
