@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import { AjaxPlugin } from 'vux'
 Vue.use(AjaxPlugin)
+Vue.$http.defaults.baseURL = 'api/'
+
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
