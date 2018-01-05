@@ -3,13 +3,6 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  // res.header("Access-Control-Allow-Origin", "http://111.231.78.140:8080");
-  // res.header('Access-Control-Allow-Credentials', true);//告诉客户端可以在HTTP请求中带上Cookie
-  // res.header("Access-Control-Allow-Headers", "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, Content-Language, Cache-Control, X-E4M-With,X_FILENAME");
-  // res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
-  // res.header("X-Powered-By",' 3.2.1')
-  // res.header("Content-Type", "application/json;charset=utf-8");
-
   res.send('hello yushengyuan');
 });
 
