@@ -18,10 +18,10 @@ export default {
     methods: {
         clickBtn () {
             this.$http({
-                methods: 'get',
-                url: '/users'
-                // methods: 'post',
-                // url: '/getuser'
+                // methods: 'get',
+                // url: '/users'
+                methods: 'post',
+                url: '/getuser'
             })
             .then( res => {
                 console.log(res)
