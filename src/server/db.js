@@ -1,5 +1,3 @@
-import { connect } from 'net';
-
 // 连接数据库
 const mysql = require('mysql');
 const connection = mysql.createConnection({
@@ -12,9 +10,9 @@ const connection = mysql.createConnection({
 connection.connect();
 
 // 查询
-connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
+connection.query('SELECT * FROM `user_info` WHERE `ID`=0', function(err, rows, fields) {
     if (err) throw err;
-    console.log('The solution is: ', rows[0].solution);
+    console.log('The solution is: ', rows);
 });
 
 // 关闭连接
