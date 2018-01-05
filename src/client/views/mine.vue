@@ -19,7 +19,8 @@ export default {
         clickBtn () {
             this.$http({
                 methods: 'get',
-                url: '/users'
+                // url: '/users'
+                url: '/getuser'
             })
             .then( res => {
                 console.log(res)
