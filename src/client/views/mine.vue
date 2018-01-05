@@ -17,8 +17,11 @@ export default {
     },
     methods: {
         clickBtn () {
-			console.log(this.$http.defaults.baseURL);
-            axios.get('http://111.231.78.140:8088/users')
+			console.log(axios.defaults.baseURL);
+            this.$http({
+                methods: 'get',
+                url: 'http://111.231.78.140:8088/users'
+            })
             .then( res => {
                 console.log(res)
             })
