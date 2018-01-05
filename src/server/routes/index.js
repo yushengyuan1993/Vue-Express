@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/movie', function(req, res, next) {
-  res.sendFile('../static/data/top50.json');
+  res.sendFile('/usr/share/nginx/server2/src/server/static/data/top50.json');
 });
 
 module.exports = router;
