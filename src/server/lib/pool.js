@@ -32,3 +32,5 @@ module.exports = query;
 // 使用示例
 // const query = require(./pool);
 // query("SELECT * FROM `user_info`", (err, vals, fields) => { })
+
+// ------------------------------------------------------------------------------------
