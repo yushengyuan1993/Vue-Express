@@ -27,10 +27,24 @@ const query = (sql, callback) => {
 module.exports = query;
 
 
-// ------------------------------------------------------------------------------------
+// 1、使用连接池示例
 
-// 使用示例
 // const query = require(./pool);
 // query("SELECT * FROM `user_info`", (err, vals, fields) => { })
+
+// ------------------------------------------------------------------------------------
+
+// 2、创建多条查询语句
+
+// 启用多条语句查询
+// var connection = mysql.creatConnection({ multipleStatements: true});
+// 新建多条语句实例
+// connection.query('sql statementq; sql statement2; sql statement3;', (err, data) => { 
+// if (err) {
+//     throw new Error(err);
+// } else {
+//     console.dir(data[0], data[1], data[2]);
+// }
+// })
 
 // ------------------------------------------------------------------------------------
