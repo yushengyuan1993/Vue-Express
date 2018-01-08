@@ -11,5 +11,5 @@ module.exports = (sql, callback) => {
 
     db.connect();
     db.query(sql, callback);
-	db.end();
+    db.end();
 };
