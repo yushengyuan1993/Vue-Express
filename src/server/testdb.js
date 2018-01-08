@@ -13,10 +13,6 @@ db.query('SELECT * FROM `user_info`', (err, data) => {
         console.log(err);
     } else {
         console.log(data);
-<<<<<<< HEAD
-    }    
-=======
     }
->>>>>>> 50067984103526a6a036dcadb9c21229beb66959
 });
 db.end();
