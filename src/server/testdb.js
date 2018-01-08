@@ -14,6 +14,5 @@ db.query('SELECT * FROM `user_info`', (err, data) => {
     } else {
         console.log(data);
     }
-    
-    db.end();    
 });
+db.end();
