@@ -13,7 +13,6 @@ db.query('SELECT * FROM `user_info`', (err, data) => {
         console.log(err);
     } else {
         console.log(data);
-    }
-    
-    db.end();    
+    }    
 });
+db.end();
