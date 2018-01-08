@@ -11,7 +11,7 @@ var getuser = require('./routes/getuser');
 
 var app = express();
 
-// view engine setup
+// 设置模板引擎
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 

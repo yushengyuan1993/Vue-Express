@@ -2,8 +2,8 @@ const mysql = require('mysql');
 
 // 创建连接池
 const pool = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
+    host    : 'localhost',
+    user    : 'root',
     password: 'yushengyuan',
     database: 'test'
 });
@@ -14,7 +14,7 @@ const query = (sql, callback) => {
             callback(err, null, null);
         } else {
             conn.query(sql, (qerr, vals, fields) => {
-                // 释放链接
+                // 释放连接
                 conn.release();
 
                 // 回调函数
